@@ -24,8 +24,9 @@ $ sudo vim /etc/hosts
 ```
 
 add the following line to the top of the file
+```
 127.0.0.1 [computer-name]
-
+```
 with [computer-name] being your VM's name
 ### Enable passwordless SSH
 1. Activate ssh agent
