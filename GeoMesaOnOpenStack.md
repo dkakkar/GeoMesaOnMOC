@@ -197,7 +197,7 @@ $ start-dfs.sh
 ```
 
 On Horizon, add a rule in your security group that allows access to port 50070(hadoop) and 50095 (accumulo)
-On your browser, go to http://<serverIP>:50070 to make sure everything is up and running
+On your browser, go to http://[your-serverIP]:50070 to make sure everything is up and running
 
 ### Configure ZooKeeper
 ```
@@ -287,7 +287,7 @@ Lastly, try if accumulo shell works
 $ accumulo shell -u root
 ```
 It will prompt for password, which should match trace.token.property.password
-You could go to http://<your_server_IP>:50095 to see if Accumulo is up and running
+You could go to http://[your_server_IP]:50095 to see if Accumulo is up and running
 
 ### GeoMesa Installation
 
