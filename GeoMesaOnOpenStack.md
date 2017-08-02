@@ -98,7 +98,7 @@ $ . ~/.bashrc
 ```
 $ sudo vim /usr/local/hadoop/etc/hadoop/core-site.xml 
 ```
-	Add this 
+Add this 
 ```
 <property>
    <name>fs.defaultFS</name>
@@ -110,7 +110,7 @@ $ sudo vim /usr/local/hadoop/etc/hadoop/core-site.xml
 $ sudo vim /usr/local/hadoop/etc/hadoop/hdfs-site.xml
 ```
 
-	Make sure it looks like this  
+Make sure it looks like this  
 
 ```
     <property>
