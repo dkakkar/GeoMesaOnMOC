@@ -104,7 +104,7 @@ $ sudo vim /usr/local/hadoop/etc/hadoop/core-site.xml
    <name>fs.defaultFS</name>
    <value>hdfs://localhost:9000</value>
 </property>
-
+```
 2. Edit hdfs-site.xml 
 ```
 $ sudo vim /usr/local/hadoop/etc/hadoop/hdfs-site.xml
