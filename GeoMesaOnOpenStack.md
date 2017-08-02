@@ -94,7 +94,9 @@ On the terminal, source from .bashrc
 ```
 $ . ~/.bashrc
 ```
-###Configure Hadoop HDFS
+
+### Configure Hadoop HDFS
+
 1. Edit core-site.xml
 ```
 $ sudo vim /usr/local/hadoop/etc/hadoop/core-site.xml 
@@ -187,6 +189,7 @@ You should get the similar output. If Namenode isn't there, then there must be a
 ```
 If NameNode isn't showing up, doing the following could help:
 ```
+$ cd $HADOOP_HOME
 $ rm -r hdfs_storage/
 $ stop-all.sh
 $ hadoop namenode -format
@@ -195,7 +198,8 @@ $ start-dfs.sh
 
 On Horizon, add a rule in your security group that allows access to port 50070(hadoop) and 50095 (accumulo)
 On your browser, go to http://<serverIP>:50070 to make sure everything is up and running
-###Configure ZooKeeper
+
+### Configure ZooKeeper
 ```
 $ cd $ZOOKEEPER_HOME/conf
 ```
@@ -212,7 +216,8 @@ Start zookeeper
 ```
 $ zkServer.sh start
 ```
-###Configure Accumulo
+
+### Configure Accumulo
 
 
 1. Make Accumulo available to the Internet. The default setting only allows access from local network.
@@ -284,7 +289,7 @@ $ accumulo shell -u root
 It will prompt for password, which should match trace.token.property.password
 You could go to http://<your_server_IP>:50095 to see if Accumulo is up and running
 
-###GeoMesa Installation
+### GeoMesa Installation
 
 Download GeoMesa/Accumulo binary distribution on geomesa.org
 
